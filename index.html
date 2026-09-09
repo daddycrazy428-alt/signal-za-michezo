@@ -1,1 +1,402 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Za Michezo</title>
 
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #070b12;
+  color: white;
+}
+
+header {
+  background: linear-gradient(135deg, #071d2d, #10102b);
+  padding: 25px 18px;
+  text-align: center;
+  border-bottom: 1px solid #243247;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #00e5ff;
+}
+
+header p {
+  margin-top: 8px;
+  color: #aab7c7;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  overflow-x: auto;
+  background: #0b111b;
+}
+
+nav button {
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 25px;
+  background: #172334;
+  color: white;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+nav button.active {
+  background: #00bcd4;
+  color: #001018;
+}
+
+.container {
+  padding: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #102c42, #17133b);
+  border: 1px solid #1e425d;
+  border-radius: 20px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.hero span {
+  color: #00e5ff;
+}
+
+.card {
+  background: #101823;
+  border: 1px solid #202e40;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.team {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.vs {
+  color: #7d8da1;
+}
+
+.signal {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.signal div {
+  background: #172334;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  color: #8ea0b5;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.value {
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+.aviator {
+  background: linear-gradient(135deg, #30130d, #1b1024);
+  border: 1px solid #643024;
+}
+
+.aviator h3 {
+  color: #ff7043;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.multiplier {
+  font-size: 38px;
+  font-weight: bold;
+  color: #ff7043;
+  text-align: center;
+  padding: 15px;
+}
+
+.status {
+  text-align: center;
+  color: #9daaba;
+  margin-bottom: 12px;
+}
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #172334;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.green {
+  color: #39e681;
+}
+
+.orange {
+  color: #ff9b62;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #69788b;
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>⚡ SIGNAL ZA MICHEZO</h1>
+  <p>Football • Aviator • Live Signals</p>
+</header>
+
+<nav>
+  <button class="active" onclick="showSection('football', this)">
+    ⚽ Michezo
+  </button>
+
+  <button onclick="showSection('aviator', this)">
+    ✈️ Aviator
+  </button>
+
+  <button onclick="showSection('history', this)">
+    📊 Historia
+  </button>
+</nav>
+
+<div class="container">
+
+  <section id="football">
+
+    <div class="hero">
+      <h2>🔥 Best <span>Football Signals</span></h2>
+      <p>Signals za mechi zilizochaguliwa kwa ajili ya uchambuzi.</p>
+    </div>
+
+    <div class="card">
+      <div class="match">
+        <div class="team">Manchester City</div>
+        <div class="vs">VS</div>
+        <div class="team">Arsenal</div>
+      </div>
+
+      <div class="signal">
+        <div>
+          <span class="label">Prediction</span>
+          <span class="value">1X</span>
+        </div>
+
+        <div>
+          <span class="label">Goals</span>
+          <span class="value">Over 1.5</span>
+        </div>
+
+        <div>
+          <span class="label">BTTS</span>
+          <span class="value">YES</span>
+        </div>
+
+        <div>
+          <span class="label">Confidence</span>
+          <span class="value">HIGH</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="match">
+        <div class="team">Barcelona</div>
+        <div class="vs">VS</div>
+        <div class="team">Real Madrid</div>
+      </div>
+
+      <div class="signal">
+        <div>
+          <span class="label">Prediction</span>
+          <span class="value">1X</span>
+        </div>
+
+        <div>
+          <span class="label">Goals</span>
+          <span class="value">Over 2.5</span>
+        </div>
+
+        <div>
+          <span class="label">BTTS</span>
+          <span class="value">YES</span>
+        </div>
+
+        <div>
+          <span class="label">Confidence</span>
+          <span class="value">MEDIUM</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="aviator" class="hidden">
+
+    <div class="hero">
+      <h2>✈️ <span>AVIATOR SIGNALS</span></h2>
+      <p>Panel ya kufuatilia signals na historia.</p>
+    </div>
+
+    <div class="card aviator">
+
+      <h3>🚀 Current Signal</h3>
+
+      <div class="multiplier" id="multiplier">
+        2.40x
+      </div>
+
+      <div class="status">
+        Signal mpya
+      </div>
+
+      <div class="signal">
+        <div>
+          <span class="label">Signal</span>
+          <span class="value">READY</span>
+        </div>
+
+        <div>
+          <span class="label">Round</span>
+          <span class="value">#1028</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h3>📈 Recent Signals</h3>
+
+      <div class="history">
+        <span>Round #1027</span>
+        <strong class="green">2.18x</strong>
+      </div>
+
+      <div class="history">
+        <span>Round #1026</span>
+        <strong class="orange">1.64x</strong>
+      </div>
+
+      <div class="history">
+        <span>Round #1025</span>
+        <strong class="green">3.21x</strong>
+      </div>
+
+      <div class="history">
+        <span>Round #1024</span>
+        <strong class="green">2.07x</strong>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="history" class="hidden">
+
+    <div class="hero">
+      <h2>📊 <span>Signal History</span></h2>
+      <p>Historia ya signals zilizowekwa kwenye mfumo.</p>
+    </div>
+
+    <div class="card">
+
+      <div class="history">
+        <span>⚽ Football</span>
+        <strong class="green">WIN</strong>
+      </div>
+
+      <div class="history">
+        <span>⚽ Football</span>
+        <strong class="green">WIN</strong>
+      </div>
+
+      <div class="history">
+        <span>✈️ Aviator</span>
+        <strong class="green">2.18x</strong>
+      </div>
+
+      <div class="history">
+        <span>✈️ Aviator</span>
+        <strong class="orange">1.64x</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Signal Za Michezo
+</footer>
+
+
+<script>
+
+function showSection(section, button) {
+
+  document.getElementById("football").classList.add("hidden");
+  document.getElementById("aviator").classList.add("hidden");
+  document.getElementById("history").classList.add("hidden");
+
+  document.getElementById(section).classList.remove("hidden");
+
+  document.querySelectorAll("nav button").forEach(function(btn) {
+    btn.classList.remove("active");
+  });
+
+  button.classList.add("active");
+}
+
+</script>
+
+</body>
+  </html>
