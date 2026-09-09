@@ -415,12 +415,26 @@ function showSection(section, button) {
       <h3>🟢 KAWAIDA</h3>
       <h2>TSh 1,000</h2>
       <p>Kwa siku 1</p>
+     
+     <button onclick="lipa(1000,'KAWAIDA - Siku 1')"
+  style="padding:12px 25px; border:0; border-radius:10px; font-weight:bold; cursor:pointer;">
+  LIPA SASA
+     </button>   
+        
 
-      <button onclick="alert('Njia ya malipo itaunganishwa hivi karibuni.')"
-        style="padding:12px 25px; border:0; border-radius:10px; font-weight:bold; cursor:pointer;">
-        LIPA SASA
-      </button>
-    </div>
+
+
+      
+
+
+
+   on <button onclick="lipa(5000,'VIP - Siku 1')"
+  style="padding:12px 25px; border:0; border-radius:10px; font-weight:bold; cursor:pointer;">
+  LIPA SASA
+   </button>
+      
+      
+    
 
     <!-- VIP SIKU -->
     <div style="padding:20px; border-radius:15px; background:#1b1b1b; border:2px solid gold;">
@@ -440,19 +454,25 @@ function showSection(section, button) {
       <h2>TSh 7,000</h2>
       <p>Kwa wiki 1</p>
 
-      <button onclick="alert('Njia ya malipo itaunganishwa hivi karibuni.')"
-        style="padding:12px 25px; border:0; border-radius:10px; font-weight:bold; cursor:pointer;">
-        LIPA SASA
+      <button onclick="lipa(7000,'VIP - Wiki 1')"
+  style="padding:12px 25px; border:0; border-radius:10px; font-weight:bold; cursor:pointer;">
+  LIPA SASA
       </button>
+        
+        
+      
     </div>
 
     <!-- VIP MWEZI -->
     <div style="padding:20px; border-radius:15px; background:#1b1b1b; border:2px solid gold;">
       <h3>👑 VIP</h3>
-      <h2>TSh 15,000</h2>
-      <p>Kwa mwezi 1</p>
+      <button onclick="lipa(15000,'VIP - Mwezi 1')"
+  style="padding:12px 25px; border:0; border-radius:10px; font-weight:bold; cursor:pointer;">
+  LIPA SASA
+      </button>
+      
 
-      <button onclick="alert('Njia ya malipo itaunganishwa hivi karibuni.')"
+      
         style="padding:12px 25px; border:0; border-radius:10px; font-weight:bold; cursor:pointer;">
         LIPA SASA
       </button>
@@ -461,6 +481,19 @@ function showSection(section, button) {
   </div>
 
         </section>
+  </section>
+
+<script>
+function lipa(kiasi, kifurushi) {
+  alert(
+    "👑 " + kifurushi +
+    "\n💰 TSh " + kiasi +
+    "\n\nNjia ya malipo itaunganishwa hivi karibuni."
+  );
+}
+</script>
+
+</body>
 </body>
   </html>
 <!-- ============================= -->
